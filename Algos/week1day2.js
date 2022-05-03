@@ -54,4 +54,3 @@ function selectionSort(nums) {
 }
 
 console.log(selectionSort(numsRandomOrder));
-console.log(selectionSort(numsReversed));
