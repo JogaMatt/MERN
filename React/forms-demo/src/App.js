@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import UserForm from './components/UserForm';
+import MovieForm from './components/MovieForm';
 
 function App() {
   return (
-    <UserForm/>
+    <fieldset>
+      <UserForm/>
+      <MovieForm/>
+    </fieldset>
   );
 }
 
