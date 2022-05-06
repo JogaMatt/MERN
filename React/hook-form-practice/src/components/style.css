@@ -1,0 +1,24 @@
+form{
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.display{
+    width: 500px;
+    margin: auto;
+}
+
+h5{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-primary{
+    width: inherit;
+}
+
+.userInfo{
+    display: flex;
+    justify-content: space-between;
+}
