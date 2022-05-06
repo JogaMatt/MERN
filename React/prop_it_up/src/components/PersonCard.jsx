@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class PersonCard extends Component {
-  render() {
-    const {firstName, lastName, age, hairColor} = this.props;
-    return (
-      <fieldset>
-          <h1>Name: {lastName}, {firstName}</h1>
-          <p>Age: {age}</p>
-          <p>Hair Color: {hairColor}</p>
+const PersonCard = (props) => {
+  return (
+    <fieldset>
+          <h1>Name: {props.lastName}, {props.firstName}</h1>
+          <p>Age: {props.age}</p>
+          <p>Hair Color: {props.hairColor}</p>
       </fieldset>
-    )
-  }
+  )
 }
+
+export default PersonCard
