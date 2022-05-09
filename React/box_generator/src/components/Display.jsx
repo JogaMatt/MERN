@@ -3,7 +3,7 @@ import './Display.css'
 
 const Display = (props) => {
 
-  const {allColors} = props
+  const {allColors, allDimensions} = props
 
   return (
     <fieldset id='display'>
