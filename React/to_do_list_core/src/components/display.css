@@ -1,0 +1,23 @@
+h4{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.choreBody{
+    width: 200px;
+    margin: auto;
+}
+
+.chore{
+    font-size: 16pt;
+}
+
+.choreList{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox{
+    margin-left: 15px;
+    margin-top: -10px;
+}
