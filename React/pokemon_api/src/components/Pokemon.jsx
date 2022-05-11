@@ -1,12 +1,16 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import './pokemon.css'
 
 const Pokemon = (props) => {
 
+    const [pokemon, setPokemon] = useState("")
+
     const [apiState, setAPIState] = useState()
 
-    const eventHandler = () => {
-        axios.get("https://pokeapi.co/api/v2/pokemon?limit=898&offset=0")
+    const eventHandler = (event) => {
+        event.preventDefault()
+        axios.get("https://api.pokemontcg.io/v2/cards?q=name:" + pokemon.replace(" ", "*"))
             .then(successResponse => {
                 console.log("SUCCESS: ", successResponse.data)
                 setAPIState(successResponse.data)
@@ -17,14 +21,18 @@ const Pokemon = (props) => {
 
   return (
     <>
-        <button onClick={eventHandler}>Fetch Pokemon</button>
+        <form onSubmit={eventHandler} >
+            <input type="text" onChange={(e) => setPokemon(e.target.value)} />
+            <button>Fetch Pokemon</button>
+        </form>
+        
         {
             (apiState) ?
             <>
                 {
-                    apiState.results.map((name, index) => {
+                    apiState.data.map((pokemon, index) => {
                         return (
-                            <li key={index}>{name.name}</li>
+                            <img key={index}  src={pokemon.images.large} alt="" className='pokemonCard'/>
                         )
                     })
                 }
