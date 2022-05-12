@@ -1,0 +1,27 @@
+#dropdown{
+    border: none;
+    background-color: rgb(241, 248, 247);
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.id{
+    border: none;
+    background-color: rgb(241, 248, 247);
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+form{
+    display: flex;
+    width: 750px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 45px;
+}
