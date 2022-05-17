@@ -4,9 +4,9 @@ import './productForm.css'
 
 
 const ProductForm = () => {
-    const [title, setTitle] = useState("")
+    const [title, setTitle] = useState("");
     const [price, setPrice] = useState("");
-    const [description, setDescription] = useState("")
+    const [description, setDescription] = useState("");
 
     const submitHandler = (e) => {
       e.preventDefault();
