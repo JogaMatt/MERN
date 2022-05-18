@@ -1,0 +1,11 @@
+#info{
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+h1,
+#link,
+h4{
+    text-align: center;
+}
