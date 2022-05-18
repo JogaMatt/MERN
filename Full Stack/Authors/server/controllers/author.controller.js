@@ -11,7 +11,7 @@ module.exports.createAuthor = (req, res) => {
         name
     })
         .then(author => res.json(author))
-        .catch(err => res.json(err));
+        .catch(err => res.status(400).json(err));
 }
 
 module.exports.allAuthors = (req, res) => {

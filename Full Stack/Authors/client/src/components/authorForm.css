@@ -11,3 +11,8 @@
 #productForm > p{
     text-decoration: underline;
 }
+
+.link{
+    display: flex;
+    justify-content: center;
+}

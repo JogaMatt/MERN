@@ -5,7 +5,15 @@
 }
 
 h1,
-#link,
 h4{
     text-align: center;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-danger{
+    margin-right: 15px;
 }

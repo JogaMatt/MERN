@@ -28,7 +28,9 @@ const Main = (props) => {
   return (
     <div>
         <h1>Favorite Authors</h1>
-        <Link to={'/new'} id='link'>Add an author</Link>
+        <div className="link">
+            <Link to={'/new'}>Add an author</Link>
+        </div>
         <hr/>
         <h4>We have quotes by:</h4>
         {loaded && <AuthorList authors={authors} removeFromDom={removeFromDom}/>}
