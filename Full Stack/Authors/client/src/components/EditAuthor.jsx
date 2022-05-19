@@ -15,16 +15,23 @@ const EditAuthor = (props) => {
             .then(res => {
                 setName(res.data.name);
             })
-    },[]);
+    },[id]);
 
     const updateAuthor = (e) => {
         e.preventDefault();
         axios.put(api + id, {
             name
         })
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
-            navigate('/')
+            .then(res => 
+              navigate('/'))
+            .catch(err => {
+              const errorRes = err.res.data.errors;
+              const errorArr = [];
+              for (const key of Object.keys(errorRes)){
+                errorArr.push(errorRes[key].message)
+              }
+              setNameError(errorArr);
+            })
     }
 
     const handleName = (e) => {
