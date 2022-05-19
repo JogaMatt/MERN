@@ -1,0 +1,73 @@
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(151, 61, 16);
+}
+h1{
+    margin-right: 575px;
+    text-align: center;
+    color: white;
+}
+#add{
+    margin-right: 30px;
+}
+
+form{
+    width: 800px;
+    margin: auto;
+}
+
+#form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right{
+    width: 350px;
+}
+
+select{
+    display: block;
+}
+
+#container{
+    height: 720px;
+    background-color: orange;
+}
+
+#pirateCard{
+    background-color: white;
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+}
+
+.leftCard{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightCard{
+    flex: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+img{
+    width: 175px;
+    height: 100px;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#boxes{
+    display: block;
+}

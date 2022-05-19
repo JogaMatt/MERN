@@ -1,0 +1,61 @@
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(151, 61, 16);
+}
+h1{
+    margin-right: 575px;
+    text-align: center;
+    color: white;
+}
+#add{
+    margin-right: 30px;
+}
+
+form{
+    width: 800px;
+    margin: auto;
+}
+
+#form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right{
+    width: 350px;
+}
+
+select{
+    display: block;
+}
+
+#container{
+    height: 720px;
+    background-color: orange;
+}
+
+#body{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+
+
+.rightDisplay{
+    padding: 15px
+}
+
+.rightDisplay > h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#displayImg{
+    width: 350px;
+    height: 200px;
+    margin-left: 140px
+}
