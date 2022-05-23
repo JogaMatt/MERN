@@ -1,0 +1,224 @@
+select{
+    text-align: center;
+}
+
+#pokemonCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 975px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#card{
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 30px 30px 0;
+    width: 209px;
+    height: 291px;
+}
+
+#bigCard{
+    border-radius: 10px;
+    margin-bottom: 30px;
+    width: 272px;
+    height: 378px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.pages{
+    margin: 0 15px 0 15px;
+}
+
+.btn-info{
+    display: block;
+    margin: auto;
+}
+
+#cardBox{
+    margin: auto;
+    width: 800px;
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.leftSide{
+    flex: 1;
+    margin-right: 75px;
+}
+
+.rightSide{
+    flex: 2
+}
+
+/* .nameBox{
+    
+} */
+
+.topBox{
+    background-color: #a4a4a4;
+    color: white;
+    height: 60px;
+    font-family: sans-serif;
+    border-radius: 5px 5px 0 0;
+    padding: 12px;
+}
+
+.bottomBox{
+    background-color: #f2f2f2;
+    height: 120px;
+    border-radius: 0 0 5px 5px;
+    padding: 12px;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hp{
+    display: flex;
+    align-items: baseline;
+}
+
+.hp > h3{
+    margin-right: 10px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif;
+}
+
+.cardInfo{
+    padding: 12px;
+    margin-top: 30px;
+}
+
+.bottomInfo{
+    background-color: #f2f2f2;
+
+}
+
+.flexMe{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    height: 90px;
+    padding: 18px;
+    border-radius: 5px;
+
+}
+
+.setInfo{
+    padding: 18px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#setImg{
+    width: 40px;
+    height: 40px;
+}
+
+.icon-Darkness{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: 0px -50px;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.icon-Dragon{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: 0px -25px;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.icon-Fire{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: 0px 0px;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.icon-Grass{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: -25px -50px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-Lightning{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: -25px -25px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-Colorless{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: -25px 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-Fighting{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: -50px -25px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-Fairy{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: -50px 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-Metal{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: 25px 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-Water{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: 25px 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-Psychic{
+    background-image: url(https://assets.pokemon.com/static2/_ui/img/cards/energy-types.png);
+    background-position: 25px 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.attackCost{
+    display: flex;
+}
+
+.bottomIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.dexImg{
+    width: 400px;
+    height: 400px;
+    background-color: #f2f2f2;
+}

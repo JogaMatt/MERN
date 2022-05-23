@@ -66,22 +66,61 @@
 
 // console.log(unique);
 
-var stringR = "lo W";
-var stringS = "Hello World!";
+// var stringR = "lo W";
+// var stringS = "Hello World!";
 
 
-function concat(string1, string2, index){
-    var newString = "";
-    for(var i = 0; i < string1.length; i++){
-        if(i <= index){
-            newString += newString.concat(string1[i]);
-        } else if (i = index+1){
-            newString = newString.concat(string2);
-        } else {
-            newString = newString.concat(string1[i]);
+// function concat(string1, string2, index){
+//     var newString = "";
+//     for(var i = 0; i < string1.length; i++){
+//         if(i <= index){
+//             newString += newString.concat(string1[i]);
+//         } else if (i = index+1){
+//             newString = newString.concat(string2);
+//         } else {
+//             newString = newString.concat(string1[i]);
+//         }
+//     }
+//     console.log(newString)
+// }
+
+// console.log(concat(stringS, stringR, 4));
+// const arr1 = [4,7,1,9,3,6]
+
+// function funcName(arr, x){
+//     let first = 0;
+//     let second = 0;
+//     for(let i = 0; i<arr.length; i++){
+//         if(arr[i] > x){
+//             i++;
+//         }
+//         for(let j = 1; j<arr.length-1; j++){
+//             if(arr[i] + arr[j] == x){
+//                 first = arr[i];
+//                 second = arr[j]
+//             }
+//         }
+//     }
+//     console.log(`PAIR: (${first}, ${second})`)
+// }
+
+// funcName(arr1, 10)
+
+const arr1 = [10, 4, 4, 6, 3]
+const expected = 4
+
+function dups(arr){
+    let dup;
+    for(let i = 0; i<arr.length; i++){
+        let start = arr[i]
+        for(let j = 1; j<arr.length-1; j++){
+            if(arr[j] == start){
+                dup = arr[j]
+            }
         }
+        
     }
-    console.log(newString)
+    return dup
 }
 
-console.log(concat(stringS, stringR, 4));
+console.log(dups(arr1))
