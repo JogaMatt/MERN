@@ -1,21 +1,12 @@
 const mongoose = require('mongoose');
 const PokemonSchema = new mongoose.Schema({
-    setId:{
+    pokeSet:{
         type: String
     },
-    name:{
-        type: String
-    },
-    superType:{
+    cardId:{
         type: String
     },
     image:{
-        type: String
-    },
-    cardNumber:{
-        type: Number
-    },
-    rarity:{
         type: String
     }
 }, {timestamps: true});

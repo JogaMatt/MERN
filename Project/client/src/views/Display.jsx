@@ -2,17 +2,18 @@ import React, {useState, useEffect} from 'react'
 import { useParams, Link } from 'react-router-dom'
 import axios from 'axios'
 import './style.css'
-import Form from '../components/Form'
+
 
 const Display = () => {
+    const PAGESIZE = 15
     const {pokeSet} = useParams()
     const [currentSet, setCurrentSet] = useState([])
     const [currentCards, setCurrentCards] = useState([])
     const [currentPage, setCurrentPage] = useState(1)
     const api = `https://api.pokemontcg.io/v2/sets/${pokeSet}`
-    const cardAPI = `https://api.pokemontcg.io/v2/cards?q=set.id:${pokeSet}&page=${currentPage}&pageSize=15`
+    const cardAPI = `https://api.pokemontcg.io/v2/cards?q=set.id:${pokeSet}&page=${currentPage}&pageSize=${PAGESIZE}`
 
-    const pageLimit = Math.ceil(currentSet.total / 15)
+    const pageLimit = Math.ceil(currentSet.total / PAGESIZE)
     
 
     // GET SET INFO
@@ -53,31 +54,31 @@ const Display = () => {
         }
     }
 
+    
+
 
     const overBackground = (e) => {
         e.target.style.boxShadow = '10px 10px 10px #03b7db'
+        e.target.style.marginTop = '-3px'
     }
 
     const leaveBackground = (e) => {
-        e.target.style.border = ''
         e.target.style.boxShadow = ''
-
+        e.target.style.marginTop = ''
     }
 
   return (
-    <div >
-        <Form/>
+    <div id='container'>
         <div id='pokemonCard' >
             {currentCards.map((card, i) => {
                 return <Link key={i} to={`/${pokeSet}/${card.id}`}><img  onMouseOver={overBackground} onMouseLeave={leaveBackground} id='card' src={card.images.small} alt="" /></Link>
                 
             })}
-        </div>
-        
-        <div id="buttons">
-            <button className='btn btn-warning' onClick={prevPage}>Prev Page</button>
-            <h4 className='pages'>{currentPage} of {pageLimit}</h4>
-            <button className='btn btn-primary' onClick={nextPage}>Next Page</button>
+            <div id="buttons">
+                <button className='btn btn-warning' onClick={prevPage}>Prev Page</button>
+                <h4 className='pages'>{currentPage} of {pageLimit}</h4>
+                <button className='btn btn-primary' onClick={nextPage}>Next Page</button>
+            </div>
         </div>
     </div>
   )

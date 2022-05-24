@@ -5,20 +5,24 @@ import Display from './views/Display';
 import SingleDisplay from './views/SingleDisplay';
 import CardDetails from './views/CardDetails';
 import PokeDex from './views/PokeDex';
+import Apron from './components/Apron';
+import MainPage from './views/MainPage';
 
 function App() {
 
   return (
     <div id='container'>
       <BrowserRouter>
+      <Form/>
         <Routes>
-          <Route path='/' element={<Form />}/>
+          <Route path='/' element={<MainPage />}/>
           <Route path='/card/:pokemon' element={<SingleDisplay/>}/>
           <Route path='/pokedex/:lowerName' element={<PokeDex/>}/>
           <Route path='/:pokeSet' element={<Display/>}/>
           <Route path='/:pokeSet/:cardId' element={<CardDetails/>}/>
         </Routes>
       </BrowserRouter>
+      <Apron/>
     </div>
   );
 }

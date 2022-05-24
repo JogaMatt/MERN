@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, {useState, useEffect} from 'react'
 import { useParams, Link } from 'react-router-dom'
-import Form from '../components/Form'
+
 
 const SingleDisplay = () => {
 
@@ -20,7 +20,6 @@ const SingleDisplay = () => {
             })
             .catch(err => console.log(err))
     }, [pokemonAPI])
-    console.log(currentPokemon)
 
     // GET CARDS IN CURRENT SET
     useEffect(() => {
@@ -61,20 +60,20 @@ const SingleDisplay = () => {
 
     // console.log(currentPokemon)
   return (
-    <div>
-        <Form/>
+    <div id='container'>
         <div id='pokemonCard' >
             {currentCards.map((card, i) => {
                 return <Link key={i} to={`/${card.set.id}/` + card.id}><img onMouseOver={overBackground} onMouseLeave={leaveBackground}  id='card' src={card.images.small} alt="" /></Link>
                 
             })}
+            <div id="buttons">
+                <button className='btn btn-warning' onClick={prevPage}>Prev Page</button>
+                <h4 className='pages'>{currentPage} of {pageLimit}</h4>
+                <button className='btn btn-primary' onClick={nextPage}>Next Page</button>
+            </div>
         </div>
         
-        <div id="buttons">
-            <button className='btn btn-warning' onClick={prevPage}>Prev Page</button>
-            <h4 className='pages'>{currentPage} of {pageLimit}</h4>
-            <button className='btn btn-primary' onClick={nextPage}>Next Page</button>
-        </div>
+        
     </div>
   )
 }
