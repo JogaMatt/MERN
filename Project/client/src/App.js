@@ -7,6 +7,7 @@ import CardDetails from './views/CardDetails';
 import PokeDex from './views/PokeDex';
 import Apron from './components/Apron';
 import MainPage from './views/MainPage';
+import MyCards from './views/MyCards';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Form/>
         <Routes>
           <Route path='/' element={<MainPage />}/>
+          <Route path='/myCards' element={<MyCards/>}/>
           <Route path='/card/:pokemon' element={<SingleDisplay/>}/>
           <Route path='/pokedex/:lowerName' element={<PokeDex/>}/>
           <Route path='/:pokeSet' element={<Display/>}/>
