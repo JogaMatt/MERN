@@ -15,8 +15,7 @@ form{
     display: flex;
     justify-content: space-evenly;
     padding: 15px;
-    background-color: #e8e8e8;
-    border-bottom: 2px solid #dedede;
+    background-image: linear-gradient(to bottom, #6d6a79, black);
 }
 
 #apron{
@@ -46,8 +45,8 @@ li{
 }
 
 .socialIcons{
-    margin: 0 10px 0 10px;
-    width: 30px;
+    margin: 0 5px 0 5px;
+    width: 35px;
 }
 
 .logoIcon{
@@ -56,11 +55,18 @@ li{
 }
 
 .black{
-    background-color: #231f20;
+    background-color: black;
     height: 50px;
     width: inherit;
     border-bottom: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5px;
+}
+
+#myCollection{
+    margin: 0;
+    width: 200px;
+    height: 30px;
 }

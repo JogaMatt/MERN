@@ -38,32 +38,24 @@ const Form = (props) => {
       <div id="navBar">
           <div id='centerMe'>
               <div className="forms">
-                <form onSubmit={searchAPI}>
-                    <p>
-                        Select a set:
+                <form onClick={searchAPI}>
                         <select className='browser-default custom-select' name="" id="dropdown"
                         onChange={(e) =>{
                             const selectedOption = e.target.value;
                             setPokemonSet(selectedOption);
                         }}>
-                            <option>--Select an Option--</option>
+                            <option value={'/'}>--Select an Pokemon Set--</option>
                             {allSets.map((set, i) => {
                                 return <option key={i} value={set.id}>{set.name}</option>
                             })}
                         </select>
-                    </p>
-                    <button className='btn btn-dark'>Show me this set!</button>
                 </form>
                 <form onSubmit={searchPokemonAPI}>
-                    <p>
-                        Search for a Card:
-                        <input type="text" onChange={(e) => setPokemon(e.target.value.replace(/\s/g, '*'))}/>
-                    </p>
-                    <button className='btn btn-success'>Show me this Pokemon!</button>
+                    <input type="text" onChange={(e) => setPokemon(e.target.value.replace(/\s/g, '*'))}/>
                 </form>
               </div>
               <div className="black">
-                  <Link to={'/myCards'} style={{color: 'white', textDecoration: 'none', fontSize: 20, marginBottom: 5}}><b>My Collection</b></Link>
+                  <Link to={'/myCards'} id='myCollection' style={{color: 'white', textDecoration: 'none', fontSize: 20, marginBottom: 5}}><b>My Collection</b></Link>
               </div>
             <Outlet/>
           </div>

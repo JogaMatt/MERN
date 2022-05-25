@@ -35,6 +35,16 @@ const CardDetails = () => {
             navigate('/myCards'))
           .catch(err => console.log(err))
     }
+
+    
+    const removeCard = (myCardId) => {
+      axios.delete(saveCardAPI + `/${myCardId}`)
+        .then(res => {
+          console.log(res)
+          navigate('/myCards')
+        })
+        .catch(err => console.log(err))
+    }
     
     var name;
 
@@ -56,7 +66,7 @@ const CardDetails = () => {
       name = card.name.replace(".", "").replace(" ", "-")
     } else if(name === "Lt."){
       name = card.name.split(" ")[2]
-    } else if(name === "Blaine's" || name === "Light" || name === "Brock's" || name === "Giovanni's" || name === "Koga's" || name === "Erika's" || name === "Misty's" || name === "Rocket's" || name === "Dark" || name === "Sabrina's" || name === "_____’s" || name === "_____'s" || name === "Shining" || name === "Rocket’s" || name === "Flying" || name === "Surfing" || name === "Galarian"){
+    } else if(name === "Blaine's" || name === "Cool" || name === "Light" || name === "Brock's" || name === "Giovanni's" || name === "Koga's" || name === "Erika's" || name === "Misty's" || name === "Rocket's" || name === "Dark" || name === "Sabrina's" || name === "_____’s" || name === "_____'s" || name === "Shining" || name === "Rocket’s" || name === "Flying" || name === "Surfing" || name === "Galarian"){
       name = card.name.split(" ")[1]
     } else if(name === "M"){
       name = card.name.split(" ")[1].slice(0, -3)
@@ -92,7 +102,7 @@ const CardDetails = () => {
                 {
                   card.supertype === 'Pokémon'
                   ?
-                  <Link style={{textDecoration: 'none'}} to={`/pokedex/${lowerName}`}><button className='btn btn-info' style={{color: 'white', fontFamily: 'sans-serif'}}>Find {name} in the Pokedex</button></Link>
+                  <Link style={{textDecoration: 'none'}} to={`/pokedex/${lowerName}`}><button className='btn btn-info' style={{marginLeft: 18,color: 'white', fontFamily: 'sans-serif'}}>Find {name} in the Pokedex</button></Link>
                   :
                   null
                 }
@@ -101,13 +111,14 @@ const CardDetails = () => {
                   ?
                     myCard.cardId === cardId 
                     ?
-                    <button className='btn btn-secondary' style={{fontSize: 24, width: 240, margin: 15, cursor: 'default'}}><b>You have this card!</b></button>
+                    <button className='btn btn-danger' onClick={() => removeCard(myCard._id)} style={{fontSize: 16, letterSpacing: -1, width: 240, margin: 15, marginLeft: -7}}><b>Remove from Your Collection?</b></button>
                     :
                     <form onSubmit={saveCard}>
                       <input type="hidden" value={pokeSet}/>
                       <input type="hidden" value={cardId}/>
                       <input type="hidden" value={image}/>
                       <button className='btn btn-success' style={{width: 275,color: 'white', fontFamily: 'sans-serif', marginLeft: 0, marginTop: 15, letterSpacing: -0.5}}>Add {card.name} to your Collection!</button>
+                      
                     </form>
                   :
                   <form onSubmit={saveCard}>
@@ -265,7 +276,9 @@ const CardDetails = () => {
                         <div className="infoRight">
                             <img id='setImg' src={card.set.images.symbol} alt="" />
                         </div>
+                        
                       </div>
+                      
                     </div>
                     :
                     null
@@ -277,6 +290,58 @@ const CardDetails = () => {
             :
             null
           }
+      </div>
+      <div className="stars_container">
+            <div className="star star-1" style={{width: 5, height: 5}}></div>
+            <div className="star star-2" style={{width: 4, height: 4}}></div>
+            <div className="star star-3" style={{width: 3, height: 3}}></div>
+            <div className="star star-4" style={{width: 2, height: 2}}></div>
+            <div className="star star-5" style={{width: 5, height: 5}}></div>
+            <div className="star star-6" style={{width: 2, height: 2}}></div>
+            <div className="star star-7" style={{width: 4, height: 4}}></div>
+            <div className="star star-8" style={{width: 5, height: 5}}></div>
+            <div className="star star-9" style={{width: 2, height: 2}}></div>
+            <div className="star star-10" style={{width: 3, height: 3}}></div>
+            <div className="star star-11" style={{width: 4, height: 4}}></div>
+            <div className="star star-12" style={{width: 2, height: 2}}></div>
+            <div className="star star-13" style={{width: 3, height: 3}}></div>
+            <div className="star star-14" style={{width: 4, height: 4}}></div>
+            <div className="star star-15" style={{width: 2, height: 2}}></div>
+            <div className="star star-16" style={{width: 5, height: 5}}></div>
+            <div className="star star-17" style={{width: 2, height: 2}}></div>
+            <div className="star star-18" style={{width: 4, height: 4}}></div>
+            <div className="star star-19" style={{width: 2, height: 2}}></div>
+            <div className="star star-20" style={{width: 5, height: 5}}></div>
+            <div className="star star-21" style={{width: 4, height: 4}}></div>
+            <div className="star star-22" style={{width: 2, height: 2}}></div>
+            <div className="star star-23" style={{width: 3, height: 3}}></div>
+            <div className="star star-24" style={{width: 4, height: 4}}></div>
+            <div className="star star-25" style={{width: 5, height: 5}}></div>
+            <div className="star star-26" style={{width: 5, height: 5}}></div>
+            <div className="star star-27" style={{width: 4, height: 4}}></div>
+            <div className="star star-28" style={{width: 3, height: 3}}></div>
+            <div className="star star-29" style={{width: 2, height: 2}}></div>
+            <div className="star star-30" style={{width: 5, height: 5}}></div>
+            <div className="star star-31" style={{width: 2, height: 2}}></div>
+            <div className="star star-32" style={{width: 4, height: 4}}></div>
+            <div className="star star-33" style={{width: 5, height: 5}}></div>
+            <div className="star star-34" style={{width: 2, height: 2}}></div>
+            <div className="star star-35" style={{width: 3, height: 3}}></div>
+            <div className="star star-36" style={{width: 4, height: 4}}></div>
+            <div className="star star-37" style={{width: 2, height: 2}}></div>
+            <div className="star star-38" style={{width: 3, height: 3}}></div>
+            <div className="star star-39" style={{width: 4, height: 4}}></div>
+            <div className="star star-40" style={{width: 2, height: 2}}></div>
+            <div className="star star-41" style={{width: 5, height: 5}}></div>
+            <div className="star star-42" style={{width: 2, height: 2}}></div>
+            <div className="star star-43" style={{width: 4, height: 4}}></div>
+            <div className="star star-44" style={{width: 2, height: 2}}></div>
+            <div className="star star-45" style={{width: 5, height: 5}}></div>
+            <div className="star star-46" style={{width: 4, height: 4}}></div>
+            <div className="star star-47" style={{width: 2, height: 2}}></div>
+            <div className="star star-48" style={{width: 3, height: 3}}></div>
+            <div className="star star-49" style={{width: 4, height: 4}}></div>
+            <div className="star star-50" style={{width: 5, height: 5}}></div>
       </div>
     </div>
   )
