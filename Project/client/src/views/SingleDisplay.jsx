@@ -63,7 +63,7 @@ const SingleDisplay = () => {
     useEffect(() => {
         setInterval(() => {
             setShowComponent(true);
-        }, 5000)
+        }, 6000)
     }, [])
 
   return (

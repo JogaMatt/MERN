@@ -9,6 +9,9 @@ const PokedexSchema = new mongoose.Schema({
     image:{
         type: String
     },
+    shinyImage:{
+        type: String
+    },
     text:{
         type: String
     },

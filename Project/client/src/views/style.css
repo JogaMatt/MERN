@@ -247,7 +247,6 @@ h1,h2,h3,h4,h5,h6{
 .dexImg{
     height: 430px;
     background-color: #231f20;
-    border-bottom: 2px solid #dbdbdb;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -326,6 +325,8 @@ h1,h2,h3,h4,h5,h6{
 video{
     width: 100%;
 }
+
+
 
 #expansionBtn{
     position: absolute;

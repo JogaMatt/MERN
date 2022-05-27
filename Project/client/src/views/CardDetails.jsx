@@ -89,6 +89,7 @@ const CardDetails = () => {
     lowerName = name.toLowerCase()
     :
     console.log("Generating lowercase name...")
+    console.log(card)
     
   return (
     <div id='mainPage'>
@@ -112,7 +113,7 @@ const CardDetails = () => {
                   ?
                     myCard.cardId === cardId 
                     ?
-                    <button className='btn btn-danger' onClick={() => removeCard(myCard._id)} style={{fontSize: 16, letterSpacing: -1, width: 240, margin: 15, marginLeft: -7}}><b>Remove from Your Collection?</b></button>
+                    <button className='btn btn-danger' onClick={() => removeCard(myCard._id)} style={{fontSize: 16, letterSpacing: -1, width: 240, margin: 15, marginLeft: 20}}><b>Remove from Your Collection?</b></button>
                     :
                     <form onSubmit={saveCard}>
                       <input type="hidden" value={pokeSet}/>

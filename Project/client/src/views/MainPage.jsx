@@ -19,7 +19,7 @@ const MainPage = () => {
   return (
     <div id='containerMain'>
       <div className="video" style={{display: 'flex', justifyContent: 'center', backgroundColor: 'black'}}>
-        <video autoPlay loop muted src='https://tcg.pokemon.com/assets/img/expansions/brilliant-stars/header/en-us/brilliant-stars-large.mp4'/>
+      <video autoPlay loop muted src="https://tcg.pokemon.com/assets/img/expansions/brilliant-stars/header/en-us/brilliant-stars-large.mp4"></video>
       </div>
       <div className="dividerBig" style={{width: 'inherit', height: 30 ,backgroundColor: '#fdf4f8'}}></div>
       <main className="bottomMain">

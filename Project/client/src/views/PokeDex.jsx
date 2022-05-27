@@ -35,6 +35,8 @@ const PokeDex = () => {
     setDescState(false)
   }
   console.log(pokeEntry)
+
+  console.log(dexInfo.image)
   
   return (
     <div id='container'>
@@ -101,7 +103,7 @@ const PokeDex = () => {
                     ?
                     <div className="abilityName" style={{display: 'flex'}}>
                       <h4>{dexInfo.abilities.name}</h4>
-                      <img onClick={displayDesc} src="https://cdn-icons.flaticon.com/png/128/4467/premium/4467515.png?token=exp=1653623967~hmac=640a4c178c524b47dc09caa1fdf53abc" style={{cursor: 'pointer', width: 24, height: 25, marginLeft: 15}} alt="" />
+                      <img onClick={displayDesc} src="https://cdn-icons.flaticon.com/png/128/4467/premium/4467515.png?token=exp=1653623967~hmac=640a4c178c524b47dc09caa1fdf53abc" style={{cursor: 'pointer', width: 24, height: 25, borderRadius: 100, marginLeft: 15}} alt="" />
                     </div>
                     :
                     null
