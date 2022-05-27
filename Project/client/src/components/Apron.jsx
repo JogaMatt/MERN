@@ -16,7 +16,7 @@ const Apron = () => {
     }
   return (
     <div id="apron">
-        <div id='apronContent' style={{marginRight: 68}}>
+        <div id='apronContent' style={{marginRight: 40}}>
             <div className="links">
                 <h5 style={{color: 'white', fontFamily: 'sans-serif', marginLeft: 12}}><b>The Pokémon Company</b></h5>
                 <ul>

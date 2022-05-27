@@ -27,7 +27,7 @@ const MainPage = () => {
           <img style={{width: 600}} src='https://tcg.pokemon.com/assets/img/expansions/brilliant-stars/global/logos/en-us/swsh09-logo.png' alt="" />
         </div>
         <Link to={'/swsh9'} style={{textDecoration: 'none'}}><button id='expansionBtn' className='btn btn-dark'><em>Go to the expansion page</em></button></Link>
-        <div className="vstar" style={{display: 'flex', justifyContent: 'center', marginTop: 300}}>
+        <div className="vstar" style={{display: 'flex', justifyContent: 'center', marginTop: 350}}>
           <Link id='mainArceus' to={'/swsh9/swsh9-123'}><img className='arceus' style={{width: 400, borderRadius: 10, marginRight: 100, marginTop: -175}} src="https://tcg.pokemon.com/assets/img/expansions/brilliant-stars/cards/en-us/SWSH09_EN_123.jpg" alt="" /></Link>
           <div className="description" style={{width: 600, marginTop: 0}}>
             <img style={{width: 300, marginLeft: 145}} src="https://tcg.pokemon.com/assets/img/expansions/brilliant-stars/global/logos/en-us/vstar-logo.png" alt="" />
@@ -35,7 +35,7 @@ const MainPage = () => {
             <h5 style={{color: '#fdf4f8', textAlign: 'center', marginTop: 60}}>The shining stars of this Pokémon TCG expansion are undeniably the Pokémon VSTAR. Each one has a VSTAR Power, a special attack or Ability that can drastically alter the course of a battle. But choose your moment wisely, because each player can only use one VSTAR Power during the entire game!</h5>
           </div>
         </div>
-        <div className="dividerBig" style={{width: 'inherit', height: 30 ,backgroundColor: 'black', marginTop: 45}}></div>
+        <div className="dividerBig" style={{width: 'inherit', height: 30 ,backgroundColor: 'black', marginTop: -45}}></div>
         <div style={{backgroundColor: '#f6f7f7', height: 1120}} className="trainerGallery">
           <div style={{display: 'flex', justifyContent: 'center'}} className="starDivider">
             <img style={{width: 750, marginTop: 40}} src="https://tcg.pokemon.com/assets/img/expansions/brilliant-stars/global/star-divider.png" alt="" />
@@ -105,7 +105,57 @@ const MainPage = () => {
             <div className="star star-48" style={{width: 3, height: 3}}></div>
             <div className="star star-49" style={{width: 4, height: 4}}></div>
             <div className="star star-50" style={{width: 5, height: 5}}></div>
-      </div>
+            <div className="star star-51" style={{width: 5, height: 5}}></div>
+            <div className="star star-52" style={{width: 4, height: 4}}></div>
+            <div className="star star-53" style={{width: 3, height: 3}}></div>
+            <div className="star star-54" style={{width: 2, height: 2}}></div>
+            <div className="star star-55" style={{width: 5, height: 5}}></div>
+            <div className="star star-56" style={{width: 2, height: 2}}></div>
+            <div className="star star-57" style={{width: 4, height: 4}}></div>
+            <div className="star star-58" style={{width: 5, height: 5}}></div>
+            <div className="star star-59" style={{width: 2, height: 2}}></div>
+            <div className="star star-60" style={{width: 3, height: 3}}></div>
+            <div className="star star-61" style={{width: 4, height: 4}}></div>
+            <div className="star star-62" style={{width: 2, height: 2}}></div>
+            <div className="star star-63" style={{width: 3, height: 3}}></div>
+            <div className="star star-64" style={{width: 4, height: 4}}></div>
+            <div className="star star-65" style={{width: 2, height: 2}}></div>
+            <div className="star star-66" style={{width: 5, height: 5}}></div>
+            <div className="star star-67" style={{width: 2, height: 2}}></div>
+            <div className="star star-68" style={{width: 4, height: 4}}></div>
+            <div className="star star-69" style={{width: 2, height: 2}}></div>
+            <div className="star star-70" style={{width: 5, height: 5}}></div>
+            <div className="star star-71" style={{width: 4, height: 4}}></div>
+            <div className="star star-72" style={{width: 2, height: 2}}></div>
+            <div className="star star-73" style={{width: 3, height: 3}}></div>
+            <div className="star star-74" style={{width: 4, height: 4}}></div>
+            <div className="star star-75" style={{width: 5, height: 5}}></div>
+            <div className="star star-76" style={{width: 5, height: 5}}></div>
+            <div className="star star-77" style={{width: 4, height: 4}}></div>
+            <div className="star star-78" style={{width: 3, height: 3}}></div>
+            <div className="star star-79" style={{width: 2, height: 2}}></div>
+            <div className="star star-80" style={{width: 5, height: 5}}></div>
+            <div className="star star-81" style={{width: 2, height: 2}}></div>
+            <div className="star star-82" style={{width: 4, height: 4}}></div>
+            <div className="star star-83" style={{width: 5, height: 5}}></div>
+            <div className="star star-84" style={{width: 2, height: 2}}></div>
+            <div className="star star-85" style={{width: 3, height: 3}}></div>
+            <div className="star star-86" style={{width: 4, height: 4}}></div>
+            <div className="star star-87" style={{width: 2, height: 2}}></div>
+            <div className="star star-88" style={{width: 3, height: 3}}></div>
+            <div className="star star-89" style={{width: 4, height: 4}}></div>
+            <div className="star star-90" style={{width: 2, height: 2}}></div>
+            <div className="star star-91" style={{width: 5, height: 5}}></div>
+            <div className="star star-92" style={{width: 2, height: 2}}></div>
+            <div className="star star-93" style={{width: 4, height: 4}}></div>
+            <div className="star star-94" style={{width: 2, height: 2}}></div>
+            <div className="star star-95" style={{width: 5, height: 5}}></div>
+            <div className="star star-96" style={{width: 4, height: 4}}></div>
+            <div className="star star-97" style={{width: 2, height: 2}}></div>
+            <div className="star star-98" style={{width: 3, height: 3}}></div>
+            <div className="star star-99" style={{width: 4, height: 4}}></div>
+            <div className="star star-100" style={{width: 5, height: 5}}></div>
+        </div>
     </div>
   )
 }

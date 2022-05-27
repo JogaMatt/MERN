@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Form from './components/Form';
 import Display from './views/Display';
+import DisplayType from './views/DisplayType';
 import SingleDisplay from './views/SingleDisplay';
 import CardDetails from './views/CardDetails';
 import PokeDex from './views/PokeDex';
@@ -21,6 +22,7 @@ function App() {
           <Route path='/card/:pokemon' element={<SingleDisplay/>}/>
           <Route path='/pokedex/:lowerName' element={<PokeDex/>}/>
           <Route path='/:pokeSet' element={<Display/>}/>
+          <Route path='/type/:type' element={<DisplayType/>}/>
           <Route path='/:pokeSet/:cardId' element={<CardDetails/>}/>
         </Routes>
       </BrowserRouter>

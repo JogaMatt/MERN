@@ -1,6 +1,6 @@
 #container{
     height: 1015px;
-    background-image: linear-gradient(black, #1e1077, #003654);
+    background-image: linear-gradient(black, #1e1077, #710673);
 }
 
 #containerMain{
@@ -15,11 +15,11 @@ select{
 #pokemonCard{
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    width: 1175px;
     height: 1015px;
     margin: auto;
     background-image: linear-gradient(#656565, #cccdce, #edf0f1);
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 #card{
@@ -44,7 +44,7 @@ select{
     margin-bottom: 15px;
     width: 290px;
     position: absolute;
-    top: 83.5%;
+    top: 81.5%;
     left: 45.75%;
 }
 
@@ -262,12 +262,12 @@ h1,h2,h3,h4,h5,h6{
 
 .dexBox{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .stats{
     width: 430px;
-    height: 276px;
+    height: 400px;
     border-radius: 10px;
     background-color: #a4a4a4;
 }
@@ -374,30 +374,23 @@ video{
     padding-top: 5px;
 }
 
-/* .stars_container{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    position: fixed;
-} */
-
 .stars_container .star{
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.811);
     position: fixed;
 }
 
 .star-1{
     top: 20%;
     left: 10%;
-    -webkit-animation: fadeinout 2s infinite linear forwards;
-    animation: fadeinout 2s infinite linear forwards;
+    -webkit-animation: fadeinout 3s infinite linear forwards;
+    animation: fadeinout 3s infinite linear forwards;
 }
 .star-2{
     top: 17%;
     left: 5%;
-    -webkit-animation: fadeinout 1s infinite linear forwards;
-    animation: fadeinout 1s infinite linear forwards;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
 }
 .star-3{
     top: 30%;
@@ -408,8 +401,8 @@ video{
 .star-4{
     top: 50%;
     left: 15%;
-    -webkit-animation: fadeinout 2s infinite linear forwards;
-    animation: fadeinout 2s infinite linear forwards;
+    -webkit-animation: fadeinout 3.5s infinite linear forwards;
+    animation: fadeinout 3.5s infinite linear forwards;
 }
 .star-5{
     top: 54%;
@@ -420,8 +413,8 @@ video{
 .star-6{
     top: 70%;
     left: 6%;
-    -webkit-animation: fadeinout 4s infinite linear forwards;
-    animation: fadeinout 4s infinite linear forwards;
+    -webkit-animation: fadeinout 4.5s infinite linear forwards;
+    animation: fadeinout 4.5s infinite linear forwards;
 }
 .star-7{
     top: 65%;
@@ -444,8 +437,8 @@ video{
 .star-10{
     top: 10%;
     left: 8%;
-    -webkit-animation: fadeinout 4s infinite linear forwards;
-    animation: fadeinout 4s infinite linear forwards;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
 }
 .star-11{
     top: 15%;
@@ -456,14 +449,14 @@ video{
 .star-12{
     top: 18%;
     left: 13%;
-    -webkit-animation: fadeinout 4s infinite linear forwards;
-    animation: fadeinout 4s infinite linear forwards;
+    -webkit-animation: fadeinout 3.5s infinite linear forwards;
+    animation: fadeinout 3.5s infinite linear forwards;
 }
 .star-13{
     top: 23%;
-    left: 16%;
-    -webkit-animation: fadeinout 1s infinite linear forwards;
-    animation: fadeinout 1s infinite linear forwards;
+    left: 17%;
+    -webkit-animation: fadeinout 3s infinite linear forwards;
+    animation: fadeinout 3s infinite linear forwards;
 }
 .star-14{
     top: 25%;
@@ -480,14 +473,14 @@ video{
 .star-16{
     top: 25%;
     left: 23%;
-    -webkit-animation: fadeinout 4s infinite linear forwards;
-    animation: fadeinout 4s infinite linear forwards;
+    -webkit-animation: fadeinout 3s infinite linear forwards;
+    animation: fadeinout 3s infinite linear forwards;
 }
 .star-17{
-    top: 30%;
-    left: 22%;
-    -webkit-animation: fadeinout 1s infinite linear forwards;
-    animation: fadeinout 1s infinite linear forwards;
+    top: 31%;
+    left: 21%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
 }
 .star-18{
     top: 47%;
@@ -510,8 +503,8 @@ video{
 .star-21{
     top: 55%;
     left: 20%;
-    -webkit-animation: fadeinout 2s infinite linear forwards;
-    animation: fadeinout 2s infinite linear forwards;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
 }
 .star-22{
     top: 45%;
@@ -534,21 +527,20 @@ video{
 .star-25{
     top: 75%;
     left: 19%;
-    -webkit-animation: fadeinout 4s infinite linear forwards;
-    animation: fadeinout 4s infinite linear forwards;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
 }
-
 .star-26{
     top: 20%;
     left: 85%;
-    -webkit-animation: fadeinout 6s infinite linear forwards;
-    animation: fadeinout 6s infinite linear forwards;
+    -webkit-animation: fadeinout 5.5s infinite linear forwards;
+    animation: fadeinout 5.5s infinite linear forwards;
 }
 .star-27{
     top: 17%;
     left: 80%;
-    -webkit-animation: fadeinout 2s infinite linear forwards;
-    animation: fadeinout 2s infinite linear forwards;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
 }
 .star-28{
     top: 30%;
@@ -565,8 +557,8 @@ video{
 .star-30{
     top: 54%;
     left: 78%;
-    -webkit-animation: fadeinout 5s infinite linear forwards;
-    animation: fadeinout 5s infinite linear forwards;
+    -webkit-animation: fadeinout 3.5s infinite linear forwards;
+    animation: fadeinout 3.5s infinite linear forwards;
 }
 .star-31{
     top: 70%;
@@ -595,14 +587,14 @@ video{
 .star-35{
     top: 10%;
     left: 83%;
-    -webkit-animation: fadeinout 1s infinite linear forwards;
-    animation: fadeinout 1s infinite linear forwards;
+    -webkit-animation: fadeinout 1.5s infinite linear forwards;
+    animation: fadeinout 1.5s infinite linear forwards;
 }
 .star-36{
     top: 15%;
     left: 92%;
-    -webkit-animation: fadeinout 3s infinite linear forwards;
-    animation: fadeinout 3s infinite linear forwards;
+    -webkit-animation: fadeinout 3.5s infinite linear forwards;
+    animation: fadeinout 3.5s infinite linear forwards;
 }
 .star-37{
     top: 18%;
@@ -685,9 +677,312 @@ video{
 .star-50{
     top: 75%;
     left: 94%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-51{
+    top: 23%;
+    left: 13%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-52{
+    top: 20%;
+    left: 8%;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
+}
+.star-53{
+    top: 33%;
+    left: 10%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-54{
+    top: 53%;
+    left: 18%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-55{
+    top: 57%;
+    left: 6%;
+    -webkit-animation: fadeinout 3.5s infinite linear forwards;
+    animation: fadeinout 3.5s infinite linear forwards;
+}
+.star-56{
+    top: 73%;
+    left: 9%;
+    -webkit-animation: fadeinout 3s infinite linear forwards;
+    animation: fadeinout 3s infinite linear forwards;
+}
+.star-57{
+    top: 68%;
+    left: 20%;
+    -webkit-animation: fadeinout 1.5s infinite linear forwards;
+    animation: fadeinout 1.5s infinite linear forwards;
+}
+.star-58{
+    top: 14%;
+    left: 25%;
+    -webkit-animation: fadeinout 3.5s infinite linear forwards;
+    animation: fadeinout 3.5s infinite linear forwards;
+}
+.star-59{
+    top: 14%;
+    left: 6%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-60{
+    top: 13%;
+    left: 11%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-61{
+    top: 18%;
+    left: 20%;
     -webkit-animation: fadeinout 5s infinite linear forwards;
     animation: fadeinout 5s infinite linear forwards;
 }
+.star-62{
+    top: 21%;
+    left: 16%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-63{
+    top: 27%;
+    left: 20%;
+    -webkit-animation: fadeinout 1s infinite linear forwards;
+    animation: fadeinout 1s infinite linear forwards;
+}
+.star-64{
+    top: 28%;
+    left: 22%;
+    -webkit-animation: fadeinout 3s infinite linear forwards;
+    animation: fadeinout 3s infinite linear forwards;
+}
+.star-65{
+    top: 34%;
+    left: 24%;
+    -webkit-animation: fadeinout 5s infinite linear forwards;
+    animation: fadeinout 5s infinite linear forwards;
+}
+.star-66{
+    top: 28%;
+    left: 26%;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
+}
+.star-67{
+    top: 33%;
+    left: 25%;
+    -webkit-animation: fadeinout 1s infinite linear forwards;
+    animation: fadeinout 1s infinite linear forwards;
+}
+.star-68{
+    top: 50%;
+    left: 24%;
+    -webkit-animation: fadeinout 3.5s infinite linear forwards;
+    animation: fadeinout 3.5s infinite linear forwards;
+}
+.star-69{
+    top: 68%;
+    left: 8%;
+    -webkit-animation: fadeinout 3.5s infinite linear forwards;
+    animation: fadeinout 3.5s infinite linear forwards;
+}
+.star-70{
+    top: 51%;
+    left: 10%;
+    -webkit-animation: fadeinout 3s infinite linear forwards;
+    animation: fadeinout 3s infinite linear forwards;
+}
+.star-71{
+    top: 58%;
+    left: 23%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-72{
+    top: 48%;
+    left: 15%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-73{
+    top: 39%;
+    left: 20%;
+    -webkit-animation: fadeinout 6s infinite linear forwards;
+    animation: fadeinout 6s infinite linear forwards;
+}
+.star-74{
+    top: 63%;
+    left: 17%;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
+}
+.star-75{
+    top: 78%;
+    left: 16%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-76{
+    top: 23%;
+    left: 82%;
+    -webkit-animation: fadeinout 6s infinite linear forwards;
+    animation: fadeinout 6s infinite linear forwards;
+}
+.star-77{
+    top: 20%;
+    left: 77%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-78{
+    top: 33%;
+    left: 79%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-79{
+    top: 53%;
+    left: 87%;
+    -webkit-animation: fadeinout 1s infinite linear forwards;
+    animation: fadeinout 1s infinite linear forwards;
+}
+.star-80{
+    top: 57%;
+    left: 75%;
+    -webkit-animation: fadeinout 5s infinite linear forwards;
+    animation: fadeinout 5s infinite linear forwards;
+}
+.star-81{
+    top: 73%;
+    left: 78%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-82{
+    top: 68%;
+    left: 89%;
+    -webkit-animation: fadeinout 4.5s infinite linear forwards;
+    animation: fadeinout 4.5s infinite linear forwards;
+}
+.star-83{
+    top: 14%;
+    left: 93%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-84{
+    top: 14%;
+    left: 75%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-85{
+    top: 13%;
+    left: 80%;
+    -webkit-animation: fadeinout 1s infinite linear forwards;
+    animation: fadeinout 1s infinite linear forwards;
+}
+.star-86{
+    top: 18%;
+    left: 89%;
+    -webkit-animation: fadeinout 3s infinite linear forwards;
+    animation: fadeinout 3s infinite linear forwards;
+}
+.star-87{
+    top: 21%;
+    left: 85%;
+    -webkit-animation: fadeinout 5s infinite linear forwards;
+    animation: fadeinout 5s infinite linear forwards;
+}
+.star-88{
+    top: 26%;
+    left: 88%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-89{
+    top: 28%;
+    left: 91%;
+    -webkit-animation: fadeinout 1.5s infinite linear forwards;
+    animation: fadeinout 1.5s infinite linear forwards;
+}
+.star-90{
+    top: 40%;
+    left: 90%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-91{
+    top: 28%;
+    left: 89%;
+    -webkit-animation: fadeinout 5s infinite linear forwards;
+    animation: fadeinout 5s infinite linear forwards;
+}
+.star-92{
+    top: 33%;
+    left: 88%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-93{
+    top: 50%;
+    left: 87%;
+    -webkit-animation: fadeinout 5s infinite linear forwards;
+    animation: fadeinout 5s infinite linear forwards;
+}
+.star-94{
+    top: 68%;
+    left: 77%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-95{
+    top: 51%;
+    left: 79%;
+    -webkit-animation: fadeinout 2.5s infinite linear forwards;
+    animation: fadeinout 2.5s infinite linear forwards;
+}
+.star-96{
+    top: 58%;
+    left: 86%;
+    -webkit-animation: fadeinout 3s infinite linear forwards;
+    animation: fadeinout 3s infinite linear forwards;
+}
+.star-97{
+    top: 48%;
+    left: 84%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-98{
+    top: 39%;
+    left: 83%;
+    -webkit-animation: fadeinout 2s infinite linear forwards;
+    animation: fadeinout 2s infinite linear forwards;
+}
+.star-99{
+    top: 63%;
+    left: 80%;
+    -webkit-animation: fadeinout 4s infinite linear forwards;
+    animation: fadeinout 4s infinite linear forwards;
+}
+.star-100{
+    top: 78%;
+    left: 85%;
+    -webkit-animation: fadeinout 5s infinite linear forwards;
+    animation: fadeinout 5s infinite linear forwards;
+}
+
+
+
 
 @-webkit-keyframes fadeinout{
     0%,100% {opacity: 0;}
@@ -699,7 +994,7 @@ video{
     50% {opacity: 1;}
 }
 
-a{
+#linkCards{
     width: 209px;
     height: 291px;
     margin: 0 25px 25px 0;
@@ -715,4 +1010,163 @@ a{
     position: fixed;
     top: 84.01%;
     right: 33.7%;
+}
+
+.loadingGif{
+    width: 1200px;
+    height: 1015px;
+}
+
+/* LOADING SCREEN */
+
+.wavyText{
+    display: flex;
+    background-color: #191b1d;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+    position: absolute;
+    top: 12%;
+    left: 44.8%;
+}
+
+.wavyText span{
+    color: white;
+    font-size: 4em;
+    text-transform: uppercase;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+    40%, 100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+/* WAITING MESSAGE */
+.waitingMessage{
+    position: absolute;
+    top: 75%;
+    left: 37.5%;
+}
+
+.waitingMessage > h3{
+    font-size: 2em;
+}
+
+.rightDex{
+    width: 430px;
+}
+
+.dexStats{
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    height: 243px;
+    background-color: #30a7d7;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.abilityInfo{
+    width: 430px;
+    height: 243px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.type_weakness{
+    width: 490px;
+    height: 300px;
+    position: absolute;
+    top: 52%
+}
+
+.displayTypes,
+.displayWeaknesses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.type-Fire{
+    width: 139px;
+    height: 32px;
+    background-color: #fc7d23;
+    border-radius: 5px;
+}
+
+.type-Water{
+    width: 139px;
+    height: 32px;
+    background-color: #4592c4;
+    border-radius: 5px;
+}
+
+.type-Electric{
+    width: 139px;
+    height: 32px;
+    background-color: #eed535;
+    border-radius: 5px;
+}
+
+.type-Rock{
+    width: 139px;
+    height: 32px;
+    background-color: #a38c22;
+    border-radius: 5px;
+}
+
+.type-Flying{
+    width: 139px;
+    height: 32px;
+    background: linear-gradient(to bottom, #3cc7ee 50%, #bdb9b8 50%);
+    border-radius: 5px;
+}
+
+.type-Ground{
+    width: 139px;
+    height: 32px;
+    background: linear-gradient(to bottom, #f7de3f 50%, #aa9741 50%);
+    border-radius: 5px;
+}
+
+.type-Grass{
+    width: 139px;
+    height: 32px;
+    background-color: #9bcc50;
+    border-radius: 5px;
+}
+
+.type-Poison{
+    width: 139px;
+    height: 32px;
+    background-color: #b97fc8;
+    border-radius: 5px;
+}
+
+.type-Psychic{
+    width: 139px;
+    height: 32px;
+    background-color: #f365b8;
+    border-radius: 5px;
+}
+
+.type-Ice{
+    width: 139px;
+    height: 32px;
+    background-color: #50c4e7;
+    border-radius: 5px;
+}
+
+#typeLink{
+    text-decoration: none;
 }

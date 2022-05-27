@@ -22,9 +22,10 @@ const CardDetails = () => {
         axios.get(myCardAPI)
             .then(res => 
               setMyCard(res.data))
+        
     }, [oneCardApi, myCardAPI])
     
-    console.log(image)
+    // console.log(image)
 
     const saveCard = (e) => {
       e.preventDefault();
@@ -98,7 +99,7 @@ const CardDetails = () => {
             ?
             <div id="cardBox">
               <div className="leftSide">
-                <img id='bigCard' src={card.images.small} alt="" /> 
+                <img id='bigCard' src={card.images.large} alt="" /> 
                 {
                   card.supertype === 'Pokémon'
                   ?
@@ -342,7 +343,57 @@ const CardDetails = () => {
             <div className="star star-48" style={{width: 3, height: 3}}></div>
             <div className="star star-49" style={{width: 4, height: 4}}></div>
             <div className="star star-50" style={{width: 5, height: 5}}></div>
-      </div>
+            <div className="star star-51" style={{width: 5, height: 5}}></div>
+            <div className="star star-52" style={{width: 4, height: 4}}></div>
+            <div className="star star-53" style={{width: 3, height: 3}}></div>
+            <div className="star star-54" style={{width: 2, height: 2}}></div>
+            <div className="star star-55" style={{width: 5, height: 5}}></div>
+            <div className="star star-56" style={{width: 2, height: 2}}></div>
+            <div className="star star-57" style={{width: 4, height: 4}}></div>
+            <div className="star star-58" style={{width: 5, height: 5}}></div>
+            <div className="star star-59" style={{width: 2, height: 2}}></div>
+            <div className="star star-60" style={{width: 3, height: 3}}></div>
+            <div className="star star-61" style={{width: 4, height: 4}}></div>
+            <div className="star star-62" style={{width: 2, height: 2}}></div>
+            <div className="star star-63" style={{width: 3, height: 3}}></div>
+            <div className="star star-64" style={{width: 4, height: 4}}></div>
+            <div className="star star-65" style={{width: 2, height: 2}}></div>
+            <div className="star star-66" style={{width: 5, height: 5}}></div>
+            <div className="star star-67" style={{width: 2, height: 2}}></div>
+            <div className="star star-68" style={{width: 4, height: 4}}></div>
+            <div className="star star-69" style={{width: 2, height: 2}}></div>
+            <div className="star star-70" style={{width: 5, height: 5}}></div>
+            <div className="star star-71" style={{width: 4, height: 4}}></div>
+            <div className="star star-72" style={{width: 2, height: 2}}></div>
+            <div className="star star-73" style={{width: 3, height: 3}}></div>
+            <div className="star star-74" style={{width: 4, height: 4}}></div>
+            <div className="star star-75" style={{width: 5, height: 5}}></div>
+            <div className="star star-76" style={{width: 5, height: 5}}></div>
+            <div className="star star-77" style={{width: 4, height: 4}}></div>
+            <div className="star star-78" style={{width: 3, height: 3}}></div>
+            <div className="star star-79" style={{width: 2, height: 2}}></div>
+            <div className="star star-80" style={{width: 5, height: 5}}></div>
+            <div className="star star-81" style={{width: 2, height: 2}}></div>
+            <div className="star star-82" style={{width: 4, height: 4}}></div>
+            <div className="star star-83" style={{width: 5, height: 5}}></div>
+            <div className="star star-84" style={{width: 2, height: 2}}></div>
+            <div className="star star-85" style={{width: 3, height: 3}}></div>
+            <div className="star star-86" style={{width: 4, height: 4}}></div>
+            <div className="star star-87" style={{width: 2, height: 2}}></div>
+            <div className="star star-88" style={{width: 3, height: 3}}></div>
+            <div className="star star-89" style={{width: 4, height: 4}}></div>
+            <div className="star star-90" style={{width: 2, height: 2}}></div>
+            <div className="star star-91" style={{width: 5, height: 5}}></div>
+            <div className="star star-92" style={{width: 2, height: 2}}></div>
+            <div className="star star-93" style={{width: 4, height: 4}}></div>
+            <div className="star star-94" style={{width: 2, height: 2}}></div>
+            <div className="star star-95" style={{width: 5, height: 5}}></div>
+            <div className="star star-96" style={{width: 4, height: 4}}></div>
+            <div className="star star-97" style={{width: 2, height: 2}}></div>
+            <div className="star star-98" style={{width: 3, height: 3}}></div>
+            <div className="star star-99" style={{width: 4, height: 4}}></div>
+            <div className="star star-100" style={{width: 5, height: 5}}></div>
+        </div>
     </div>
   )
 }

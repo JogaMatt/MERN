@@ -1,70 +1,96 @@
 import React, {useState, useEffect} from 'react'
+import { useParams, Link } from 'react-router-dom'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
-
-const MyCards = () => {
-  const [myCards, setMyCards] = useState([])
-  const pageSize = 15
-  const [currentPage, setCurrentPage] = useState(1)
-  const myCardsAPI = 'http://localhost:8000/api/myCards'
-
-  const pageLimit = Math.ceil(myCards.length / pageSize)
-  const nextPage = () => {
-      if(currentPage < pageLimit){
-          setCurrentPage(currentPage + 1)
-      }
-      else{
-          console.log("You're at the last page!")
-      }
-  }
-  const prevPage = () => {
-      if(currentPage > 1){
-          setCurrentPage(currentPage - 1)
-      }
-      else{
-          console.log("You're at the first page!")
-      }
-  }
+import './style.css'
 
 
+const Display = () => {
+    const PAGESIZE = 15
+    let {type} = useParams()
+    const [currentSet, setCurrentSet] = useState([])
+    const [currentCards, setCurrentCards] = useState([])
+    const [currentPage, setCurrentPage] = useState(1)
 
-  useEffect(() => {
-    axios.get(myCardsAPI)
-      .then(res => setMyCards(res.data))
-      .catch(err => console.log(err))
-  }, [myCardsAPI])
+    if(type === 'Poison'){
+        type = "Psychic"
+    } else if (type === 'Flying'){
+        type = "Colorless"
+    } else if (type === 'Ice'){
+        type = "Water"
+    } else if (type === 'Electric'){
+        type = "Lightning"
+    } else if (type === 'Ground' || type === 'Rock'){
+        type = "Fighting"
+    }
 
-  const overBackground = (e) => {
-    e.target.style.boxShadow = '10px 10px 10px #1e1077'
-    e.target.style.marginTop = '-1px'
-  }
+    const api = `https://api.pokemontcg.io/v2/cards?q=types:${type}`
+    const cardAPI = `https://api.pokemontcg.io/v2/cards?q=types:${type}&page=${currentPage}&pageSize=${PAGESIZE}`
 
-  const leaveBackground = (e) => {
-      e.target.style.boxShadow = ''
-      e.target.style.marginTop = ''
-  }
+    console.log(currentSet)
+    const pageLimit = Math.ceil(currentSet.length / PAGESIZE)
 
-  console.log(myCards)
+
+    // GET SET INFO
+    useEffect(() => {
+        axios.get(api)
+            .then(res => {
+                setCurrentSet(res.data.data)
+                setCurrentPage(1)
+            })
+            .catch(err => console.log(err))
+    }, [api])
+
+    useEffect(() => {
+        axios.get(cardAPI)
+            .then(res => {
+                setCurrentCards(res.data.data)
+            })
+            .catch(err => console.log(err))
+    }, [cardAPI])
+
+
+    const nextPage = () => {
+        if(currentPage < pageLimit){
+            setCurrentPage(currentPage => currentPage + 1)
+            console.log(cardAPI)
+        }
+        else{
+            console.log("You're at the last page!")
+        }
+    }
+    const prevPage = () => {
+        if(currentPage > 1){
+            setCurrentPage(currentPage => currentPage - 1)
+        }
+        else{
+            console.log("You're at the first page!")
+        }
+    }
+
+    const overBackground = (e) => {
+        e.target.style.boxShadow = '10px 10px 10px #1e1077'
+        e.target.style.marginTop = '-1px'
+    }
+
+    const leaveBackground = (e) => {
+        e.target.style.boxShadow = ''
+        e.target.style.marginTop = ''
+    }
+
   return (
     <div id='container'>
-      <div id="pokemonCard">
-          {
-            myCards
-            ?
-            myCards.slice((currentPage - 1) * pageSize, currentPage * pageSize).map((card, i) => {
-              return <Link id='linkCards' key={i} to={`/${card.pokeSet}/${card.cardId}`}><img  onMouseOver={overBackground} onMouseLeave={leaveBackground} id='card' src={card.image} alt="" /></Link>
-            })
-            :
-            console.log("Loading...")
-          }
-          <div style={{display: 'flex'}} id="buttons">
+        <div id='pokemonCard' >
+            {currentCards.map((card, i) => {
+                return <Link id='linkCards' key={i} to={`/${card.set.id}/${card.id}`}><img  onMouseOver={overBackground} onMouseLeave={leaveBackground} id='card' src={card.images.large} alt="" /></Link>
+            })}
+            <div style={{height: 500}}></div>
+        </div>
+        <div style={{display: 'flex'}} id="buttons">
             <div style={{height: 45.5, width: 44, backgroundColor: 'black', borderTopLeftRadius: 5, borderBottomLeftRadius: 5}} className='prev' onClick={prevPage}><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRRbNmCyC-wFLrolAnUdBlVO8NDC9BC9ij4Q&usqp=CAU' className='leftArrow' style={{width: 30, marginTop: 7.5, marginLeft: 7, cursor: 'pointer'}}></img></div>
             <div style={{height:45.5, width: 125, backgroundColor: '#231f20'}} className='currentPage'>{currentPage} of {pageLimit}</div>
             <div style={{height: 45.5, width: 44, backgroundColor: 'black', borderTopRightRadius: 5, borderBottomRightRadius: 5}} className='next' onClick={nextPage}><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRRbNmCyC-wFLrolAnUdBlVO8NDC9BC9ij4Q&usqp=CAU' className='rightArrow' style={{width: 30, marginTop: 7.5, marginLeft: 7, cursor: 'pointer'}}></img></div>
         </div>
-        <div style={{height: 500}}></div>
-      </div>
-      <div className="stars_container">
+        <div className="stars_container">
             <div className="star star-1" style={{width: 5, height: 5}}></div>
             <div className="star star-2" style={{width: 4, height: 4}}></div>
             <div className="star star-3" style={{width: 3, height: 3}}></div>
@@ -170,4 +196,4 @@ const MyCards = () => {
   )
 }
 
-export default MyCards
+export default Display
