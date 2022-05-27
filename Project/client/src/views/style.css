@@ -246,7 +246,7 @@ h1,h2,h3,h4,h5,h6{
 
 .dexImg{
     height: 430px;
-    background-color: #f2f2f2;
+    background-color: #231f20;
     border-bottom: 2px solid #dbdbdb;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -1160,10 +1160,31 @@ video{
     border-radius: 5px;
 }
 
+.type-Bug{
+    width: 139px;
+    height: 32px;
+    background-color: #729f40;
+    border-radius: 5px;
+}
+
 .type-Ice{
     width: 139px;
     height: 32px;
     background-color: #50c4e7;
+    border-radius: 5px;
+}
+
+.type-Normal{
+    width: 139px;
+    height: 32px;
+    background-color: #a3acaf;
+    border-radius: 5px;
+}
+
+.type-Fighting{
+    width: 139px;
+    height: 32px;
+    background-color: #d56724;
     border-radius: 5px;
 }
 

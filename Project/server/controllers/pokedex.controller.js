@@ -3,6 +3,7 @@ module.exports.saveEntry = (req, res) => {
     const {
         name,
         pokedexNum,
+        image,
         text,
         height,
         weight,
@@ -14,6 +15,7 @@ module.exports.saveEntry = (req, res) => {
     Pokedex.create({
         name,
         pokedexNum,
+        image,
         text,
         height,
         weight,

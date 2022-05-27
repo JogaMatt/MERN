@@ -43,9 +43,9 @@ const PokeDex = () => {
         <div className="dexBox">
           <div className="leftDex">
             {
-              pokeEntry.sprites 
+              dexInfo 
               ?
-              <img className='dexImg' src={pokeEntry.sprites.front_default} alt="" />
+              <img className='dexImg' src={dexInfo.image} alt="pokemon_image" />
               :
               null
             }

@@ -6,6 +6,9 @@ const PokedexSchema = new mongoose.Schema({
     pokedexNum:{
         type: Number
     },
+    image:{
+        type: String
+    },
     text:{
         type: String
     },
