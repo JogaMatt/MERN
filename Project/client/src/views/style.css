@@ -4,7 +4,8 @@
 }
 
 #containerMain{
-    height: 3100px;
+    height: max-content;
+    width: inherit;
     background-image: linear-gradient(to right, black, #1e1077, black);
 }
 
@@ -50,6 +51,11 @@ select{
 
 .trainerGallery{
     background-image: linear-gradient(#837e7e, #cccdce, #edf0f1);
+    padding-bottom: 60px;
+}
+
+.cardImg{
+    margin: auto;
 }
 
 .pages{
@@ -329,9 +335,9 @@ video{
 
 
 #expansionBtn{
-    position: absolute;
+    /* position: absolute;
     top: 105%;
-    right: 42.5%;
+    right: 42.5%; */
     height: 5%;
     width: 15%;
     font-size:x-large;
@@ -1191,4 +1197,14 @@ video{
 
 #typeLink{
     text-decoration: none;
+}
+
+.errorCode{
+    text-align: center;
+}
+
+.errorCode > h1{
+    font-size: 100pt;
+    font-family: sans-serif;
+    font-weight: 600;
 }
